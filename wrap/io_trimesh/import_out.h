@@ -85,13 +85,13 @@ static bool ReadHeader(FILE *fp,unsigned int &num_cams, unsigned int &num_points
     return true;
 }
 
-static bool ReadHeader(const char * filename,unsigned int &/*num_cams*/, unsigned int &/*num_points*/){
+/*static bool ReadHeader(const char * filename,unsigned int &, unsigned int &){
     FILE *fp = fopen(filename, "r");
     if(!fp) return false;
     ReadHeader(fp);
     fclose(fp);
     return true;
-}
+}*/
 
 
 static int Open( OpenMeshType &m, std::vector<Shot<ScalarType> >  & shots,
